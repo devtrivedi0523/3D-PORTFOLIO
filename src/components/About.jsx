@@ -94,16 +94,16 @@ const About = () => {
 
     </div>
     <div className='mt-10 flex gap-4 mb-4'>
-        <button className='px-6 py-2 bg-black-100 text-white rounded-full hover:bg-tertiary cursor-pointer'
+        {/* <button className='px-6 py-2 bg-black-100 text-white rounded-full hover:bg-tertiary cursor-pointer'
          onClick={openEmail} >
           Hire Me
-        </button>
+        </button> */}
         <a
           href="src/assets/Dev Trivedi.pdf"  // Make sure this path is correct
           download="Dev_Trivedi_Resume"
-          className='px-6 py-2 bg-black-100 text-white rounded-full hover:bg-tertiary cursor pointer'
+          className='px-6 py-2 bg-black-100 text-white rounded-full hover:bg-tertiary cursor pointer border border-secondary'
         >
-          Download Resume
+          Download CV
         </a>
         </div>
 
