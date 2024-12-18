@@ -99,7 +99,7 @@ const About = () => {
           Hire Me
         </button> */}
         <a
-          href="src/assets/Dev Trivedi.pdf"  // Make sure this path is correct
+          href="public/Dev Trivedi.pdf"  // Make sure this path is correct
           download="Dev_Trivedi_Resume"
           className='px-6 py-2 bg-black-100 text-white rounded-full hover:bg-tertiary cursor pointer border border-secondary'
         >
