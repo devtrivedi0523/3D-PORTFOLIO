@@ -27,23 +27,23 @@ const Hero = () => {
           text-white-100`}>
             Strong foundation in Web Design and Development, with a proven track record of producing quality work...
           </p>
-        {/* <div className='mt-4 flex gap-4 mb-4'>
+          {/* <div className='mt-4 flex gap-4 mb-4'>
         <button className='px-6 py-2 bg-black-100 text-white rounded-full hover:bg-tertiary cursor-pointer'>
           Hire Me
         </button>
         </div> */}
         </div>
-      </div>  
-        <ComputersCanvas />
+      </div>
+      <ComputersCanvas />
 
-        <div className='absolute xs:bottom-10
+      <div className='absolute xs:bottom-10
         bottom-32 w-full flex justify-center
         items-center'>
-          <a href="#about">
-            <div className='w-[35px] h-[64px] 
+        <a href="#about">
+          <div className='w-[35px] h-[64px] 
             rounded-3xl border-4 border-secondary
             flex justify-center items-start p-2'>
-              <motion.div
+            <motion.div
               animate={{
                 y: [0, 24, 0]
               }}
@@ -54,11 +54,11 @@ const Hero = () => {
               }}
               className='w-3 h-3 rounded-full
               bg-secondary mb-1'
-              />
-              
-            </div>
-          </a>
-        </div>
+            />
+
+          </div>
+        </a>
+      </div>
     </section>
   )
 }

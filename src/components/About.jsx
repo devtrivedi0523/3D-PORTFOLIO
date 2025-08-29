@@ -78,12 +78,7 @@ const About = () => {
     className='mt-4 text-secondary text-[17px]
     max-w-3xl leading-[30px]'
     >
-      I'm a Skilled Developer with experience in HTML, CSS and 
-      Javascript and understanding of frameworks and libraries 
-      like React, Tailwindcss and Three.js.
-      I'm a quick learner and collaborate with my friends and 
-      peers to create efficient, scalable and user-frindly solutions. 
-      Lets work together to bring new ideas to life !! 
+      As a developer with experience across frontend (React, Tailwind CSS, JavaScript) and backend (Java, Spring Boot, MySQL), I’m also exploring AI/ML and cloud computing to build future-ready solutions. I thrive on learning quickly and collaborating to bring bold ideas to life !! 
     </motion.p>
 
     <div className='mt-20 flex flex-wrap gap-10'>

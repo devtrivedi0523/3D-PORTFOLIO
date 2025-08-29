@@ -11,9 +11,9 @@ const Computers = ({ isMobile }) => {
   return (
     <mesh>
       <hemisphereLight intensity={2}
-      groundColor="black" />
+        groundColor="black" />
       <pointLight intensity={4} />
-      <spotLight 
+      <spotLight
         position={[-20, 50, 10]}
         angle={0.12}
         penumbra={1}
@@ -23,9 +23,9 @@ const Computers = ({ isMobile }) => {
         shadow-mapSize-height={1024}
       />
       <primitive object={computer.scene}
-      scale={isMobile ? 0.7 : 0.75}
-      position={ isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
-      rotation={[-0.01, -0.2, -0.1]}
+        scale={isMobile ? 0.7 : 0.75}
+        position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
+        rotation={[-0.01, -0.2, -0.1]}
       />
     </mesh>
   )
@@ -49,32 +49,32 @@ const ComputersCanvas = () => {
     mediaQuery.addEventListener('change',
       handleMediaQueryChange);
 
-      return () => {
-        mediaQuery.removeEventListener('change',
+    return () => {
+      mediaQuery.removeEventListener('change',
         handleMediaQueryChange);
-      }
-    
-  }, [])
-  
-return (
-  <Canvas
-  frameloop='demand'
-  shadows
-  camera={{position: [20, 3, 5], fov: 25}}
-  gl={{ preserveDrawingBuffer: true }} 
-  >
-    <Suspense fallback={<CanvasLoader />}>
-      <OrbitControls 
-      enableZoom={false}
-      maxPolarAngle={Math.PI / 2}
-      minPolarAngle={Math.PI / 2}
-      />
-      <Computers isMobile={isMobile} />
-    </Suspense>
+    }
 
-    <Preload all />
-  </Canvas>
-)
+  }, [])
+
+  return (
+    <Canvas
+      frameloop='demand'
+      shadows
+      camera={{ position: [20, 3, 5], fov: 25 }}
+      gl={{ preserveDrawingBuffer: true }}
+    >
+      <Suspense fallback={<CanvasLoader />}>
+        <OrbitControls
+          enableZoom={false}
+          maxPolarAngle={Math.PI / 2}
+          minPolarAngle={Math.PI / 2}
+        />
+        <Computers isMobile={isMobile} />
+      </Suspense>
+
+      <Preload all />
+    </Canvas>
+  )
 
 }
 

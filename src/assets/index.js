@@ -44,7 +44,11 @@ import sal from "./company/sal.png";
 import Iste from "./company/Iste.png";
 import brw from "./brw.jpg"
 import cheesebox from "./company/cheesebox.png";
-import dlogo from "./dlogo.png"
+import dlogo from "./dlogo.png";
+import lb from "./company/lb.png";
+import lb2 from "./company/lb2.png";
+import sb from "./company/sb.png"
+import z from "./company/z.jpg"
 
 
 export {
@@ -91,4 +95,8 @@ export {
   brw,
   cheesebox,
   dlogo,
+  lb,
+  lb2,
+  sb,
+  z
 };
