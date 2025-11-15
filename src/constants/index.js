@@ -35,7 +35,10 @@ import {
   lb2,
   dlogo,
   sb,
-  z
+  z,
+  baxa,
+  gn,
+  si,
 } from "../assets";
 
 export const navLinks = [
@@ -136,11 +139,11 @@ const technologies = [
 const workExperiences = [
 
   {
-    title: "Freelancing",
-    company_name: "Full-Stack Web Developer",
+    title: "Baxa Agency Pvt. Ltd.",
+    company_name: "Full Stack Developer/Web Designer",
     icon: dlogo,
     iconBg: "#E6DEDD",
-    date: "January 2025 - Present",
+    date: "Oct 2024 – Jan 2025",
     points: [
       "Collaborated with international and domestic clients to design and develop modern, scalable webapplications tailored to business needs",
       "Golden Nest (Manchester-based client, in partnership with Baxa Agency): Built a real estate platform forbuying, selling, and renting properties.",
@@ -149,20 +152,19 @@ const workExperiences = [
   },
   {
     title: "Zeitech Solutions Private Limited",
-    company_name: "Java Software Developer",
+    company_name: "Java Developer Intern",
     icon: z,
     iconBg: "#E6DEDD",
-    date: "June 2024 - July 2024",
+    date: "Jan 2025 – Apr 2025",
     points: [
-      "Completed the Summer Internship , mastering the Skills like, ReactJS , Bootstrap, PHP and API like Three.js to create and display 3D Models..",
-      "Also worked and improved the skills of HTML, CSS, JAVASCRIPT under there guidance.",
-      "During the training gained several leranings such as Front-end Development Static Wordpress website development and more.",
-    ],
+      "Built and optimized RESTful APIs using Java and Spring Boot, improving response time by 30%.",
+      "Collaborated with designers to align backend workflows with modern UI prototypes and accessibility goals."
+    ]
   },
 
   {
     title: "Astniq Solutions Private Limited",
-    company_name: "Software Engineering Intern",
+    company_name: "Web Designing Intern",
     icon: astniq,
     iconBg: "#E6DEDD",
     date: "June 2024 - July 2024",
@@ -173,27 +175,29 @@ const workExperiences = [
     ],
   },
   {
-    title: "CheeseBox Studios & Said'N Done Podcast",
-    company_name: "Active Intern ",
+    title: "CheeseBox Studios",
+    company_name: "Graphic Designer/Event Promotion Intern",
     icon: cheesebox,
     iconBg: "#E6DEDD",
     date: "Nov 2022 - Aug 2024",
     points: [
-      "Managed the highly anticipated Screening of Football games with Man United Supporters Club, Ahmedabad. .",
-      "Also managed the screening of the spectacular,  FIFA WORLD CUP 2022 at CheeseBox Studios, Ahmedabad. Which attracted an average audience of 120-150 people..",
-      "Created and started a podcast with my school friends, the YT channel of which has gained 100s of views till now",
-      "Also managed other important events which helped me gaining better insights to how a studio works.",
+      "Managed the screening of the spectacular,  FIFA WORLD CUP 2022 at CheeseBox Studios, Ahmedabad. Which attracted an average audience of 120-150 people..",
+      "Designed visual and marketing assets in Photoshop and Illustrator to promote comedy, music, and live football screenings.",
+      "Worked with event teams to create posters, banners, and digital media that increased attendance and brand visibility.",
+      "Ensured visual consistency and accessibility across digital and print materials to enhance audience engagement.",
     ],
   },
   {
-    title: "ISTE & GDSC",
-    company_name: "Active Member and Volunteer",
+    title: "ISTE & GDSC - GTU",
+    company_name: "Graphic Design Assistant",
     icon: gdsc,
     iconBg: "#E6DEDD",
-    date: "June 2022 - January 2024",
+    date: "June 2022 – January 2024",
     points: [
-      "Participated in many quizzes and shows held by the ISTE (Indian Socirty For Technical Education ) community",
-      "Helped as a volunteer in managing coding and technical events of GDSC (Google Developers Club) ",
+      "Created and designed accessible web interfaces for campus organizations following campus-specific guidelines.",
+      "Collaborated with faculty and web teams using Figma and WordPress to prototype and implement responsive layouts.",
+      "Contributed to user testing, color contrast verification, and UX improvements across multiple university websites.",
+      "Part of the graphics teams of GDSC and ISTE; created visual content to communicate technical/event messages effectively",
     ],
   },
 ]
@@ -279,67 +283,71 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Book Recommendation Website",
+    name: "Golden Nest – Real Estate Platform (Buy/Sell/Rent)",
     description:
-      "Website that uses a personality quiz to assess the user's interests and then recommends books that are likely to appeal to them.",
+      "Developed a full-stack real estate web app with a user-first design approach and responsive interface.",
     tags: [
       {
-        name: "python",
+        name: "java",
         color: "blue-text-gradient",
       },
       {
-        name: "postgreSQL",
+        name: "MySQL",
         color: "green-text-gradient",
       },
       {
-        name: "javascript",
+        name: "springboot",
         color: "pink-text-gradient",
       },
     ],
-    image: brw,
-    source_code_link: "https://github.com/",
+    image: gn,
+    source_code_link: "https://golden-nest.vercel.app/",
   },
   {
-    name: "Job IT",
+    name: "Creative Baxa – Event & Branding Agency Website",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Designed and developed a modern, responsive site for a creative agency, aligning visuals with brand identity.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "node.js",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "tailwindcss",
         color: "pink-text-gradient",
       },
+      {
+        name: "typescript",
+        color: "blue-text-gradient",
+      },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: baxa,
+    source_code_link: "https://www.creativebaxa.com/",
   },
   {
-    name: "Trip Guide",
+    name: "Shrinal Industries",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Created Website for Shrinal Industries, which presently deals in Pharmaceutical Chemicals, Paint Chemicals and Construction Chemicals (Curing Compound).",
     tags: [
       {
         name: "nextjs",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "tailwindcss",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "drupal",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: si,
+    source_code_link: "https://www.shrinalindustries.com/",
   },
 ];
 

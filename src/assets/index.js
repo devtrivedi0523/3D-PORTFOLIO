@@ -49,6 +49,9 @@ import lb from "./company/lb.png";
 import lb2 from "./company/lb2.png";
 import sb from "./company/sb.png"
 import z from "./company/z.jpg"
+import baxa from "./baxa.png"
+import gn from "./gn.png"
+import si from "./si.png"
 
 
 export {
@@ -98,5 +101,8 @@ export {
   lb,
   lb2,
   sb,
-  z
+  z,
+  baxa,
+  si,
+  gn,
 };
