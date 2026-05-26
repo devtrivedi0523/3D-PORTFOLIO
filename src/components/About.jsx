@@ -69,7 +69,7 @@ const About = () => {
 
       <div className='mt-10 flex gap-4 mb-4'>
         <a
-          href="/Dev_Trivedi_Resume.pdf"
+          href="/Dev_Resume (1).pdf"
           download="Dev_Trivedi_Resume"
           className='px-6 py-2 bg-black-100 text-white rounded-full hover:bg-tertiary cursor-pointer border border-secondary'
         >
