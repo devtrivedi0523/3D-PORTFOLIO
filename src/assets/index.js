@@ -8,7 +8,6 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 
 import css from "./tech/css.png";
-import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
@@ -17,16 +16,22 @@ import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
-import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 import python from "./tech/python.png";
-import C from "./tech/C.png"
-import java from "./tech/java.png"
-import canva from "./tech/canva.png"
-import photoshop from "./tech/photoshop.png"
-import premierpro from "./tech/premierpro.png"
-import php from "./tech/php.png"
+import C from "./tech/C.png";
+import java from "./tech/java.png";
+import canva from "./tech/canva.png";
+import photoshop from "./tech/photoshop.png";
+import premierpro from "./tech/premierpro.png";
+import php from "./tech/php.png";
 
+// New tech icons — make sure these files are in src/assets/tech/
+import typescript from "./tech/typescript.svg";
+import docker from "./tech/docker.svg";
+import nextjs from "./tech/nextjs.svg";
+import postgresql from "./tech/postgresql.svg";
+import googlecloud from "./tech/googlecloud.svg";
+import opencv from "./tech/opencv.svg";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -42,20 +47,18 @@ import gdsc from "./company/gdsc.png";
 import puna from "./company/puna.png";
 import sal from "./company/sal.png";
 import Iste from "./company/Iste.png";
-import brw from "./brw.jpg"
+import brw from "./brw.jpg";
 import cheesebox from "./company/cheesebox.png";
 import dlogo from "./dlogo.png";
 import lb from "./company/lb.png";
 import lb2 from "./company/lb2.png";
-import sb from "./company/sb.png"
-import z from "./company/z.jpg"
-import baxa from "./baxa.png"
-import gn from "./gn.png"
-import si from "./si.png"
-import baxa1 from './baxa1.svg';
-import image from './image.png';
-// import profile from './profile.png';
-
+import sb from "./company/sb.png";
+import z from "./company/z.jpg";
+import baxa from "./baxa.png";
+import gn from "./gn.png";
+import si from "./si.png";
+import baxa1 from "./baxa1.svg";
+import image from "./image.png";
 
 export {
   logo,
@@ -67,7 +70,6 @@ export {
   menu,
   close,
   css,
-  docker,
   figma,
   git,
   html,
@@ -76,15 +78,7 @@ export {
   reactjs,
   redux,
   tailwind,
-  typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  carrent,
-  jobit,
-  tripguide,
   python,
   C,
   java,
@@ -92,6 +86,19 @@ export {
   photoshop,
   premierpro,
   php,
+  typescript,
+  docker,
+  nextjs,
+  postgresql,
+  googlecloud,
+  opencv,
+  meta,
+  shopify,
+  starbucks,
+  tesla,
+  carrent,
+  jobit,
+  tripguide,
   zydus,
   puna,
   sal,
@@ -110,5 +117,4 @@ export {
   gn,
   baxa1,
   image,
-  // profile,
 };

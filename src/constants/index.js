@@ -9,13 +9,6 @@ import {
   css,
   reactjs,
   tailwind,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
   threejs,
   python,
   C,
@@ -41,127 +34,48 @@ import {
   si,
   baxa1,
   image,
+  docker,
+  nextjs,
+  postgresql,
+  googlecloud,
+  opencv,
 } from "../assets";
 
 export const navLinks = [
-  {
-    id: "about",
-    title: "About",
-  },
-  {
-    id: "work",
-    title: "Work",
-  },
-  {
-    id: "projects",
-    title: "Projects"
-  },
-  {
-    id: "contact",
-    title: "Contact",
-  },
+  { id: "about", title: "About" },
+  { id: "work", title: "Work" },
+  { id: "projects", title: "Projects" },
+  { id: "contact", title: "Contact" },
 ];
 
 const services = [
-  {
-    title: "Backend Developer",
-    icon: backend,
-  },
-  {
-    title: "Full Stack Developer",
-    icon: web,
-  },
-  {
-    title: "Computer Vision & ML",
-    icon: mobile,
-  },
-  {
-    title: "Cloud & DevOps",
-    icon: creator,
-  },
+  { title: "Backend Developer", icon: backend },
+  { title: "Full Stack Developer", icon: web },
+  { title: "Computer Vision & ML", icon: mobile },
+  { title: "Cloud & DevOps", icon: creator },
 ];
 
 const technologies = [
-  {
-    name: "Python",
-    icon: python,
-  },
-  {
-    name: "Java",
-    icon: java,
-  },
-  {
-    name: "C",
-    icon: C,
-  },
-  {
-    name: "TypeScript",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
-  },
-  {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Next.js",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Spring Boot",
-    icon: sb,
-  },
-  {
-    name: "PostgreSQL",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg",
-  },
-  {
-    name: "Docker",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
-  },
-  {
-    name: "GCP",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg",
-  },
-  {
-    name: "OpenCV",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/opencv/opencv-original.svg",
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
-    name: "PHP",
-    icon: php,
-  },
-  {
-    name: "Canva",
-    icon: canva,
-  },
-  {
-    name: "Premiere Pro",
-    icon: premierpro,
-  },
-  {
-    name: "Photoshop",
-    icon: photoshop,
-  },
+  { name: "Python", icon: python },
+  { name: "Java", icon: java },
+  { name: "C", icon: C },
+  { name: "TypeScript", icon: typescript },
+  { name: "JavaScript", icon: javascript },
+  { name: "React JS", icon: reactjs },
+  { name: "Next.js", icon: nextjs },
+  { name: "Tailwind CSS", icon: tailwind },
+  { name: "Spring Boot", icon: sb },
+  { name: "PostgreSQL", icon: postgresql },
+  { name: "Docker", icon: docker },
+  { name: "GCP", icon: googlecloud },
+  { name: "OpenCV", icon: opencv },
+  { name: "Three JS", icon: threejs },
+  { name: "HTML 5", icon: html },
+  { name: "CSS 3", icon: css },
+  { name: "PHP", icon: php },
+  { name: "Canva", icon: canva },
+  { name: "Premiere Pro", icon: premierpro },
+  { name: "Photoshop", icon: photoshop },
 ];
 
 const workExperiences = [
@@ -292,24 +206,21 @@ const educationExperiences = [
 
 const testimonials = [
   {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+    testimonial: "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
     name: "Sara Lee",
     designation: "CFO",
     company: "Acme Co",
     image: "https://randomuser.me/api/portraits/women/4.jpg",
   },
   {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
+    testimonial: "I've never met a web developer who truly cares about their clients' success like Rick does.",
     name: "Chris Brown",
     designation: "COO",
     company: "DEF Corp",
     image: "https://randomuser.me/api/portraits/men/5.jpg",
   },
   {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+    testimonial: "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
     name: "Lisa Wang",
     designation: "CTO",
     company: "456 Enterprises",
@@ -320,67 +231,34 @@ const testimonials = [
 const projects = [
   {
     name: "Golden Nest – Real Estate Platform (Buy/Sell/Rent)",
-    description:
-      "Developed a full-stack real estate web app with a user-first design approach and responsive interface.",
+    description: "Developed a full-stack real estate web app with a user-first design approach and responsive interface.",
     tags: [
-      {
-        name: "java",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "MySQL",
-        color: "green-text-gradient",
-      },
-      {
-        name: "springboot",
-        color: "pink-text-gradient",
-      },
+      { name: "java", color: "blue-text-gradient" },
+      { name: "MySQL", color: "green-text-gradient" },
+      { name: "springboot", color: "pink-text-gradient" },
     ],
     image: gn,
     source_code_link: "https://golden-nest.vercel.app/",
   },
   {
     name: "Creative Baxa – Event & Branding Agency Website",
-    description:
-      "Designed and developed a modern, responsive site for a creative agency, aligning visuals with brand identity.",
+    description: "Designed and developed a modern, responsive site for a creative agency, aligning visuals with brand identity.",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "node.js",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwindcss",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "typescript",
-        color: "blue-text-gradient",
-      },
+      { name: "react", color: "blue-text-gradient" },
+      { name: "node.js", color: "green-text-gradient" },
+      { name: "tailwindcss", color: "pink-text-gradient" },
+      { name: "typescript", color: "blue-text-gradient" },
     ],
     image: baxa,
     source_code_link: "https://www.creativebaxa.com/",
   },
   {
     name: "Shrinal Industries",
-    description:
-      "Created Website for Shrinal Industries, which presently deals in Pharmaceutical Chemicals, Paint Chemicals and Construction Chemicals (Curing Compound).",
+    description: "Created a website for Shrinal Industries, dealing in Pharmaceutical, Paint, and Construction Chemicals.",
     tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "tailwindcss",
-        color: "green-text-gradient",
-      },
-      {
-        name: "drupal",
-        color: "pink-text-gradient",
-      },
+      { name: "nextjs", color: "blue-text-gradient" },
+      { name: "tailwindcss", color: "green-text-gradient" },
+      { name: "drupal", color: "pink-text-gradient" },
     ],
     image: si,
     source_code_link: "https://www.shrinalindustries.com/",
