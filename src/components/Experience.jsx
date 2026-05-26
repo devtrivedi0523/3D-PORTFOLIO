@@ -53,7 +53,12 @@ const Experience = () => {
 
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <motion.div
+        variants={textVariant()}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+      >
         <p className={styles.sectionSubText}>What I Have Done So Far</p>
         <h2 className={styles.sectionHeadText}>My Experience & Education</h2>
       </motion.div>
@@ -62,21 +67,19 @@ const Experience = () => {
       <div className="flex gap-5 mt-10">
         <button
           onClick={() => setActiveTab("work")}
-          className={`px-5 py-2 rounded-xl font-semibold transition-all duration-300 ${
-            activeTab === "work"
+          className={`px-5 py-2 rounded-xl font-semibold transition-all duration-300 ${activeTab === "work"
               ? "bg-purple-600 text-white shadow-lg"
               : "bg-gray-800 text-gray-300 hover:bg-gray-700"
-          }`}
+            }`}
         >
           Work Experience
         </button>
         <button
           onClick={() => setActiveTab("education")}
-          className={`px-5 py-2 rounded-xl font-semibold transition-all duration-300 ${
-            activeTab === "education"
+          className={`px-5 py-2 rounded-xl font-semibold transition-all duration-300 ${activeTab === "education"
               ? "bg-purple-600 text-white shadow-lg"
               : "bg-gray-800 text-gray-300 hover:bg-gray-700"
-          }`}
+            }`}
         >
           Education
         </button>

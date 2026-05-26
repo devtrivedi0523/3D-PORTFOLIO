@@ -39,6 +39,8 @@ import {
   baxa,
   gn,
   si,
+  baxa1,
+  image,
 } from "../assets";
 
 export const navLinks = [
@@ -51,6 +53,10 @@ export const navLinks = [
     title: "Work",
   },
   {
+    id: "projects",
+    title: "Projects"
+  },
+  {
     id: "contact",
     title: "Contact",
   },
@@ -58,47 +64,39 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
-    icon: web,
-  },
-  {
     title: "Backend Developer",
-    icon: mobile,
-  },
-  {
-    title: "Graphic Designing",
     icon: backend,
   },
   {
-    title: "Event Mangement",
+    title: "Full Stack Developer",
+    icon: web,
+  },
+  {
+    title: "Computer Vision & ML",
+    icon: mobile,
+  },
+  {
+    title: "Cloud & DevOps",
     icon: creator,
   },
 ];
 
 const technologies = [
   {
-    name: "C",
-    icon: C,
-  },
-  {
     name: "Python",
     icon: python,
   },
   {
-    name: "Java ",
+    name: "Java",
     icon: java,
   },
   {
-    name: "Springboot",
-    icon: sb,
+    name: "C",
+    icon: C,
   },
   {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
+    name: "TypeScript",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
   },
   {
     name: "JavaScript",
@@ -109,59 +107,100 @@ const technologies = [
     icon: reactjs,
   },
   {
+    name: "Next.js",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+  },
+  {
     name: "Tailwind CSS",
     icon: tailwind,
+  },
+  {
+    name: "Spring Boot",
+    icon: sb,
+  },
+  {
+    name: "PostgreSQL",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg",
+  },
+  {
+    name: "Docker",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
+  },
+  {
+    name: "GCP",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg",
+  },
+  {
+    name: "OpenCV",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/opencv/opencv-original.svg",
   },
   {
     name: "Three JS",
     icon: threejs,
   },
   {
-    name: "php",
+    name: "HTML 5",
+    icon: html,
+  },
+  {
+    name: "CSS 3",
+    icon: css,
+  },
+  {
+    name: "PHP",
     icon: php,
   },
   {
-    name: "premierpro",
+    name: "Canva",
+    icon: canva,
+  },
+  {
+    name: "Premiere Pro",
     icon: premierpro,
   },
   {
-    name: "photoshop",
+    name: "Photoshop",
     icon: photoshop,
-  },
-  {
-    name: "canva",
-    icon: canva,
   },
 ];
 
-
-
 const workExperiences = [
-
   {
-    title: "Baxa Agency Pvt. Ltd.",
-    company_name: "Full Stack Developer/Web Designer",
-    icon: dlogo,
+    title: "California State University, Long Beach",
+    company_name: "Computer Vision & Autonomous Systems Engineer",
+    icon: image,
     iconBg: "#E6DEDD",
-    date: "Oct 2024 – Jan 2025",
+    date: "Feb 2026 – Present",
     points: [
-      "Collaborated with international and domestic clients to design and develop modern, scalable webapplications tailored to business needs",
-      "Golden Nest (Manchester-based client, in partnership with Baxa Agency): Built a real estate platform forbuying, selling, and renting properties.",
-      "Creative Baxa (India-based event and branding agency): Created a sleek, high-performance website usingReact, TypeScript, Tailwind CSS, and Node.js to showcase services, portfolios, and enhance client engagement.",
+      "Developing OpenCV and YOLOv8 pipelines for real-time object detection and autonomous mission execution on a competition quadcopter.",
+      "Configured Pixhawk and Mission Planner for autonomous waypoint navigation; recalibrated RC, servos, and LiDAR across quadcopter and thermal UAV platforms.",
+      "Collaborating with a multidisciplinary team to build and field-test autonomous UAV systems for UASC competition readiness.",
     ],
   },
   {
-    title: "Zeitech Solutions Private Limited",
-    company_name: "Java Developer Intern",
+    title: "Zeitech IT Services Pvt. Ltd.",
+    company_name: "Software Development Intern",
     icon: z,
     iconBg: "#E6DEDD",
     date: "Jan 2025 – Apr 2025",
     points: [
-      "Built and optimized RESTful APIs using Java and Spring Boot, improving response time by 30%.",
-      "Collaborated with designers to align backend workflows with modern UI prototypes and accessibility goals."
-    ]
+      "Built and maintained backend microservices using REST APIs, improving scalability and reducing response times by 30%.",
+      "Developed Python-based internal APIs and automation scripts for data processing and workflow optimization, improving developer efficiency.",
+      "Designed multithreaded endpoints capable of sustaining 200+ concurrent requests at under 250ms latency in load tests.",
+    ],
   },
-
+  {
+    title: "Baxa Agency Pvt. Ltd.",
+    company_name: "Full Stack Developer",
+    icon: baxa1,
+    iconBg: "#E6DEDD",
+    date: "Aug 2024 – Dec 2024",
+    points: [
+      "Developed a Spring Boot + React real estate platform, improving API latency for 450+ listings through query optimization.",
+      "Built a high-performance React/Node.js marketing site, boosting page-load speed by 40% and improving SEO ranking.",
+      "Implemented structured logging, health checks, and a unit testing suite around critical APIs, improving uptime by 15%.",
+    ],
+  },
   {
     title: "Astniq Solutions Private Limited",
     company_name: "Web Designing Intern",
@@ -169,22 +208,21 @@ const workExperiences = [
     iconBg: "#E6DEDD",
     date: "June 2024 - July 2024",
     points: [
-      "Completed the Summer Internship , mastering the Skills like, ReactJS , Bootstrap, PHP and API like Three.js to create and display 3D Models..",
-      "Also worked and improved the skills of HTML, CSS, JAVASCRIPT under there guidance.",
-      "During the training gained several leranings such as Front-end Development Static Wordpress website development and more.",
+      "Completed the Summer Internship, mastering skills like ReactJS, Bootstrap, PHP and Three.js to create and display 3D Models.",
+      "Strengthened core frontend skills in HTML, CSS, and JavaScript under professional guidance.",
+      "Gained hands-on experience in front-end development and static WordPress website development.",
     ],
   },
   {
     title: "CheeseBox Studios",
-    company_name: "Graphic Designer/Event Promotion Intern",
+    company_name: "Graphic Designer / Event Promotion Intern",
     icon: cheesebox,
     iconBg: "#E6DEDD",
-    date: "Nov 2022 - Aug 2024",
+    date: "Nov 2022 – Aug 2024",
     points: [
-      "Managed the screening of the spectacular,  FIFA WORLD CUP 2022 at CheeseBox Studios, Ahmedabad. Which attracted an average audience of 120-150 people..",
+      "Managed screening of the FIFA World Cup 2022 at CheeseBox Studios, Ahmedabad, attracting an average audience of 120–150 people.",
       "Designed visual and marketing assets in Photoshop and Illustrator to promote comedy, music, and live football screenings.",
-      "Worked with event teams to create posters, banners, and digital media that increased attendance and brand visibility.",
-      "Ensured visual consistency and accessibility across digital and print materials to enhance audience engagement.",
+      "Created posters, banners, and digital media that increased event attendance and brand visibility.",
     ],
   },
   {
@@ -194,65 +232,63 @@ const workExperiences = [
     iconBg: "#E6DEDD",
     date: "June 2022 – January 2024",
     points: [
-      "Created and designed accessible web interfaces for campus organizations following campus-specific guidelines.",
+      "Part of the graphics teams of GDSC and ISTE; created visual content to communicate technical and event messages effectively.",
       "Collaborated with faculty and web teams using Figma and WordPress to prototype and implement responsive layouts.",
       "Contributed to user testing, color contrast verification, and UX improvements across multiple university websites.",
-      "Part of the graphics teams of GDSC and ISTE; created visual content to communicate technical/event messages effectively",
     ],
   },
-]
+];
+
 const educationExperiences = [
   {
-    title: "Masters in CS",
-    company_name: "California State University Long Beach",
+    title: "Masters of Science in Computer Science",
+    company_name: "California State University, Long Beach",
     icon: lb2,
     iconBg: "#E6DEDD",
-    date: "2025 - Present",
+    date: "Aug 2025 – May 2027",
     points: [
-      "Thrilled to share that I have started my Master’s in Computer Science at California State University, Long Beach (CSU LB)", "This marks the beginning of a new chapter in my academic and professional journey. I’m looking forward to deepening my knowledge, exploring research opportunities, and building connections with peers, professors, and industry professionals", "Grateful to my family, mentors, and friends for their constant support throughout this journey", "Excited about what lies ahead and open to connecting with fellow students, professionals, and anyone passionate about technology, innovation, and growth. "
+      "Pursuing graduate studies with a focus on backend engineering, computer vision, and AI/ML systems.",
+      "Actively applying coursework to real-world projects, including autonomous UAV systems and real-time detection pipelines.",
+      "Engaging with research opportunities and building expertise in distributed systems and scalable software architecture.",
     ],
   },
   {
-    title: "Bachelors in CSE",
-    company_name: "Sal Instistute of Technology and Engineering Research",
+    title: "B.Tech in Computer Science Engineering",
+    company_name: "Sal Institute of Technology and Engineering Research",
     icon: sal,
     iconBg: "#E6DEDD",
-    date: "2021 - 2025",
+    date: "Sept 2021 – May 2025",
     points: [
-      "Always been an active and hard-working student taking intrest in the subjects related to CSE.",
-      "Collaborated with my friends to create a BOOK RECOMMENDATION WEBSITE USING PERSONALITY QUIZ for college DE project",
-      "Played an important role as a goalscorer to win inter-college football tournament 3 consecutive times.",
-      "Accumulated an average CGPA of 7 over 3 years.",
+      "Graduated with a focus on software engineering, data structures, and full-stack web development.",
+      "Built a Book Recommendation System using a Personality Quiz as a final-year project.",
+      "Active member of ISTE and GDSC chapters; contributed to technical events and design work.",
+      "Achieved a cumulative CGPA of 7.0 over four years.",
     ],
   },
   {
-    title: "Intermediate",
+    title: "Intermediate (Class XII)",
     company_name: "Puna International School",
     icon: puna,
     iconBg: "#E6DEDD",
     date: "March 2021",
     points: [
-      "Learned basic life skills and improved my personality by learning important human traits like Patience, Selflessness, HardWork, Honesty etc.",
-      "At the same time pursued my further studies for competetitive exam like JEE MAINS and ADV.",
-      "Scored 82% in 12TH CBSE Board Exam.",
+      "Completed 12th grade under CBSE curriculum with a score of 82%.",
+      "Prepared for competitive engineering entrance exams (JEE Mains & Advanced) alongside board studies.",
     ],
   },
   {
-    title: "High School",
+    title: "High School (Class X)",
     company_name: "Zydus School For Excellence",
     icon: zydus,
     iconBg: "#E6DEDD",
     date: "March 2019",
     points: [
-      "Was actively involved in school music group, participating in events like Shrijan, held by DPS.",
-      "Selected for school football team and reached the finals of Khel Mahakumbh Tournament.",
-      "Partcipated in many diffferent cultural & skillful events like Founders day and elocution competitions.",
-      "Scored 87% in 10th CBSE Board Exam.",
+      "Scored 87% in the 10th CBSE Board Examination.",
+      "Active participant in school football team, reaching the finals of the Khel Mahakumbh Tournament.",
+      "Involved in cultural events including Founders Day and elocution competitions.",
     ],
   },
-
-]
-
+];
 
 const testimonials = [
   {

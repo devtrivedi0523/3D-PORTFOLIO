@@ -25,7 +25,7 @@ const Navbar = () => {
           window.scrollTo(0, 0);
         }}
         >
-          <img src={dlogo} alt="dlogo" className='w-9
+          <img src="/profile.png" alt="dlogo" className='w-9
           h-9 object-contain' />
           <p className='text-white text-[18px]
           font-bold cursor-pointer flex'> Dev Trivedi </p>

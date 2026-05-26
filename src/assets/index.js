@@ -52,6 +52,9 @@ import z from "./company/z.jpg"
 import baxa from "./baxa.png"
 import gn from "./gn.png"
 import si from "./si.png"
+import baxa1 from './baxa1.svg';
+import image from './image.png';
+// import profile from './profile.png';
 
 
 export {
@@ -105,4 +108,7 @@ export {
   baxa,
   si,
   gn,
+  baxa1,
+  image,
+  // profile,
 };
