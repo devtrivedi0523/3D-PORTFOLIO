@@ -39,6 +39,7 @@ import {
   postgresql,
   googlecloud,
   opencv,
+  aws,
 } from "../assets";
 
 export const navLinks = [
@@ -68,6 +69,7 @@ const technologies = [
   { name: "PostgreSQL", icon: postgresql },
   { name: "Docker", icon: docker },
   { name: "GCP", icon: googlecloud },
+  { name: "AWS", icon: aws },
   { name: "OpenCV", icon: opencv },
   { name: "Three JS", icon: threejs },
   { name: "HTML 5", icon: html },

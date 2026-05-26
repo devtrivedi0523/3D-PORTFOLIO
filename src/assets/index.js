@@ -32,6 +32,8 @@ import nextjs from "./tech/nextjs.svg";
 import postgresql from "./tech/postgresql.svg";
 import googlecloud from "./tech/googlecloud.svg";
 import opencv from "./tech/opencv.svg";
+import aws from "./tech/aws.svg";
+
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -117,4 +119,5 @@ export {
   gn,
   baxa1,
   image,
+  aws,
 };

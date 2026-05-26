@@ -1,51 +1,35 @@
-import { useState, useRef, useEffect } from 'react'
-import { BallCanvas } from './canvas'
+import { motion } from 'framer-motion'
 import { sectionwrapper } from '../hoc'
 import { technologies } from '../constants'
-
-const LazyBall = ({ icon, name, index }) => {
-  const ref = useRef()
-  const [visible, setVisible] = useState(false)
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      const observer = new IntersectionObserver(
-        ([entry]) => {
-          if (entry.isIntersecting) {
-            setVisible(true)
-            observer.disconnect()
-          }
-        },
-        { threshold: 0.1 }
-      )
-      if (ref.current) observer.observe(ref.current)
-      return () => observer.disconnect()
-    }, index * 150) // stagger by 150ms per ball
-
-    return () => clearTimeout(timer)
-  }, [index])
-
-  return (
-    <div ref={ref} className='w-28 h-28'>
-      {visible ? (
-        <BallCanvas icon={icon} />
-      ) : (
-        <div className='w-full h-full rounded-full bg-tertiary' />
-      )}
-    </div>
-  )
-}
+import { fadeIn } from '../utils/motion'
 
 const Tech = () => {
   return (
-    <div className='flex flex-row flex-wrap justify-center gap-10'>
+    <div className='flex flex-row flex-wrap justify-center gap-6'>
       {technologies.map((technology, index) => (
-        <LazyBall
+        <motion.div
           key={technology.name}
-          icon={technology.icon}
-          name={technology.name}
-          index={index}
-        />
+          variants={fadeIn("up", "spring", index * 0.05, 0.5)}
+          whileHover={{
+            scale: 1.15,
+            boxShadow: "0 0 20px #915eff, 0 0 40px #915eff55",
+            borderColor: "#915eff",
+          }}
+          transition={{ type: "spring", stiffness: 300, damping: 15 }}
+          className='flex flex-col items-center justify-center
+          w-24 h-24 bg-tertiary rounded-2xl p-3
+          border border-transparent cursor-default'
+          style={{ transition: "box-shadow 0.3s ease, border-color 0.3s ease" }}
+        >
+          <img
+            src={technology.icon}
+            alt={technology.name}
+            className='w-12 h-12 object-contain'
+          />
+          <p className='text-secondary text-[11px] mt-2 text-center'>
+            {technology.name}
+          </p>
+        </motion.div>
       ))}
     </div>
   )
