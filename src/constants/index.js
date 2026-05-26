@@ -33,7 +33,7 @@ import {
   gn,
   si,
   baxa1,
-  image,
+  bad,
   docker,
   nextjs,
   postgresql,
@@ -84,7 +84,7 @@ const workExperiences = [
   {
     title: "California State University, Long Beach",
     company_name: "Computer Vision & Autonomous Systems Engineer",
-    icon: image,
+    icon: bad,
     iconBg: "#E6DEDD",
     date: "Feb 2026 – Present",
     points: [
@@ -178,7 +178,7 @@ const educationExperiences = [
       "Graduated with a focus on software engineering, data structures, and full-stack web development.",
       "Built a Book Recommendation System using a Personality Quiz as a final-year project.",
       "Active member of ISTE and GDSC chapters; contributed to technical events and design work.",
-      "Achieved a cumulative CGPA of 7.0 over four years.",
+      "Achieved a cumulative CGPA of 8.0 over four years.",
     ],
   },
   {
@@ -232,38 +232,55 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Golden Nest – Real Estate Platform (Buy/Sell/Rent)",
-    description: "Developed a full-stack real estate web app with a user-first design approach and responsive interface.",
+    name: "Golden Nest – Real Estate Platform",
+    description:
+      "Full-stack real estate platform built with Spring Boot and React, featuring JWT authentication, role-based access, optimized MySQL queries with indexing, and Docker deployment on Railway.",
     tags: [
-      { name: "java", color: "blue-text-gradient" },
-      { name: "MySQL", color: "green-text-gradient" },
-      { name: "springboot", color: "pink-text-gradient" },
+      { name: "springboot", color: "blue-text-gradient" },
+      { name: "react", color: "green-text-gradient" },
+      { name: "mysql", color: "pink-text-gradient" },
     ],
     image: gn,
-    source_code_link: "https://golden-nest.vercel.app/",
+    source_code_link: "https://github.com/devtrivedi0523",
+    live_link: "https://golden-nest.vercel.app/",
   },
   {
-    name: "Creative Baxa – Event & Branding Agency Website",
-    description: "Designed and developed a modern, responsive site for a creative agency, aligning visuals with brand identity.",
+    name: "Creative Baxa – Agency Website",
+    description:
+      "Production-grade agency website built with React, TypeScript, and Tailwind CSS. Modular component architecture, responsive UI, Node.js backend for dynamic content and form submissions.",
     tags: [
       { name: "react", color: "blue-text-gradient" },
-      { name: "node.js", color: "green-text-gradient" },
-      { name: "tailwindcss", color: "pink-text-gradient" },
-      { name: "typescript", color: "blue-text-gradient" },
+      { name: "typescript", color: "green-text-gradient" },
+      { name: "node.js", color: "pink-text-gradient" },
     ],
     image: baxa,
-    source_code_link: "https://www.creativebaxa.com/",
+    source_code_link: "https://github.com/devtrivedi0523",
+    live_link: "https://www.creativebaxa.com/",
   },
   {
-    name: "Shrinal Industries",
-    description: "Created a website for Shrinal Industries, dealing in Pharmaceutical, Paint, and Construction Chemicals.",
+    name: "Real-Time Vehicle Detection System",
+    description:
+      "Real-time vehicle detection and traffic analysis system using OpenCV and YOLOv8. Detects and classifies cars, trucks, and motorcycles with object tracking, line-crossing logic, and a Flask REST API.",
+    tags: [
+      { name: "python", color: "blue-text-gradient" },
+      { name: "yolov8", color: "green-text-gradient" },
+      { name: "flask", color: "pink-text-gradient" },
+    ],
+    image: si,
+    source_code_link: "https://github.com/devtrivedi0523",
+    live_link: null,
+  },
+  {
+    name: "Shrinal Industries Website",
+    description:
+      "Corporate website for a chemical manufacturing company. Clean, responsive design with product catalog and contact integration.",
     tags: [
       { name: "nextjs", color: "blue-text-gradient" },
       { name: "tailwindcss", color: "green-text-gradient" },
-      { name: "drupal", color: "pink-text-gradient" },
     ],
     image: si,
-    source_code_link: "https://www.shrinalindustries.com/",
+    source_code_link: "https://github.com/devtrivedi0523",
+    live_link: "https://www.shrinalindustries.com/",
   },
 ];
 

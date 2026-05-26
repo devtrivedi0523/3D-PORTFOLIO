@@ -34,13 +34,33 @@ const About = () => {
         <h2 className={styles.sectionHeadText}>Overview</h2>
       </motion.div>
 
-      <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
-      >
-        Computer Science graduate student at Cal State Long Beach with hands-on experience in backend engineering and real-time AI-powered systems. Proficient in Python, Java, REST APIs, and SQL databases, with applied work in computer vision using OpenCV and YOLOv8. I build scalable full-stack applications and enjoy solving hard problems at the intersection of software and machine intelligence.
-      </motion.p>
+      {/* Split layout */}
+      <div className='flex flex-col-reverse lg:flex-row gap-10 mt-4 items-center'>
 
+        {/* Text side */}
+        <motion.p
+          variants={fadeIn("right", "", 0.1, 1)}
+          className='text-secondary text-[17px] max-w-3xl leading-[30px]'
+        >
+          Computer Science graduate student at Cal State Long Beach with hands-on experience in backend engineering and real-time AI-powered systems. Proficient in Python, Java, REST APIs, and SQL databases, with applied work in computer vision using OpenCV and YOLOv8. I build scalable full-stack applications and enjoy solving hard problems at the intersection of software and machine intelligence.
+        </motion.p>
+
+        {/* Photo side */}
+        <motion.div
+          variants={fadeIn("left", "", 0.2, 1)}
+          className='flex-shrink-0'
+        >
+          <img
+            src='/profile.png'
+            alt='Dev Trivedi'
+            className='w-48 h-48 lg:w-64 lg:h-64 rounded-full object-cover
+            border-4 border-[#915eff] shadow-[0_0_30px_#915eff55]'
+          />
+        </motion.div>
+
+      </div>
+
+      {/* Service cards and CV button stay the same below */}
       <div className='mt-20 flex flex-wrap gap-10'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
@@ -55,9 +75,8 @@ const About = () => {
         >
           Download CV
         </a>
-      </div>
+      </div >
     </>
-  );
-};
-
+  )
+}
 export default sectionwrapper(About, "about");

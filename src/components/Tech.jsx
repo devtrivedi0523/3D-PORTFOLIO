@@ -26,7 +26,7 @@ const Tech = () => {
             alt={technology.name}
             className='w-12 h-12 object-contain'
           />
-          <p className='text-secondary text-[11px] mt-2 text-center'>
+          <p className='text-white text-[11px] mt-2 text-center'>
             {technology.name}
           </p>
         </motion.div>

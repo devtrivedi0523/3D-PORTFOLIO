@@ -60,7 +60,7 @@ import baxa from "./baxa.png";
 import gn from "./gn.png";
 import si from "./si.png";
 import baxa1 from "./baxa1.svg";
-import image from "./image.png";
+import bad from "./image.png";
 
 export {
   logo,
@@ -118,6 +118,6 @@ export {
   si,
   gn,
   baxa1,
-  image,
+  bad,
   aws,
 };
