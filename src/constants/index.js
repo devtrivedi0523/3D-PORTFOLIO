@@ -242,7 +242,7 @@ const projects = [
     ],
     image: gn,
     source_code_link: "https://github.com/devtrivedi0523",
-    live_link: "https://golden-nest.vercel.app/",
+    live_link: "https://www.thegoldennest.co.uk/",
   },
   {
     name: "Creative Baxa – Agency Website",
